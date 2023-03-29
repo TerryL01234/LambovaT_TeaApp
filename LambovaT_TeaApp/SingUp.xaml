@@ -34,6 +34,26 @@
                    Width="150" 
                    TextAlignment="Center" 
                    Height="57"/>
+        <TextBox x:Name="First"
+                 Grid.Column="0"
+                 FontSize="15"
+                 FontFamily="Times New Roman"
+                 HorizontalAlignment="Center" 
+                 Margin="0,0,0,0" 
+                 TextWrapping="Wrap"  
+                 VerticalAlignment="Top" 
+                 Width="346" 
+                 Height="40"/>
+        <TextBox x:Name="Last"
+                 Grid.Column="0"
+                 FontSize="15"
+                 FontFamily="Times New Roman"
+                 HorizontalAlignment="Center" 
+                 Margin="0,0,0,0" 
+                 TextWrapping="Wrap"  
+                 VerticalAlignment="Bottom" 
+                 Width="346" 
+                 Height="40"/>
         <TextBox x:Name="Email"
                  Grid.Column="0"
                  FontSize="15"
@@ -76,10 +96,11 @@
                 FontFamily="Times New Roman" 
                 Foreground="#106D0E"
                 FontWeight="SemiBold" 
-                Margin="50,285,34.333,98" 
+                Margin="0,170,0,0" 
                    Width="313" 
                    Height="39"
-                   Grid.Column="1"/>
+                   Grid.Column="1"
+                   TextAlignment="Center"/>
 
         <TextBlock HorizontalAlignment="Center" 
             TextWrapping="Wrap" 
@@ -100,7 +121,7 @@
                VerticalAlignment="Center" 
                Grid.Column="1"
                Source="https://static.vecteezy.com/system/resources/previews/004/230/426/original/funny-cartoon-mug-with-herbal-tea-with-flower-cute-illustration-in-flat-style-purple-violet-and-green-colors-autumn-hot-drink-cozy-style-print-cup-of-herbal-drink-vector.jpg" 
-               Margin="20,0,0,90"/>
+               Margin="10,0,0,100"/>
 
     </Grid>
 </Window>
