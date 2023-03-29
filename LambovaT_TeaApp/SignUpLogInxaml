@@ -1,0 +1,174 @@
+﻿<Window x:Class="LambovaT_TeaApp.SignUpLogIn"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LambovaT_TeaApp"
+        mc:Ignorable="d"
+        Title="SignUpLogIn" 
+        Height="450" 
+        Width="800">
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="8*"/>
+			<RowDefinition Height="3*"/>
+		</Grid.RowDefinitions>
+		<Rectangle HorizontalAlignment="Center" 
+                   Height="325" 
+                   Fill="#C3E58D" 
+                   VerticalAlignment="Center" 
+                   Width="800"/>
+		<TextBlock HorizontalAlignment="Center" 
+                   Height="71" 
+                   Text="Sign Up or Login" 
+                   TextWrapping="Wrap" 
+                   VerticalAlignment="Top" 
+                   Margin="0,70,0,0"
+                   Width="334"
+                   TextAlignment="Center"
+                   FontSize="40"
+                   Foreground="#503D75"/>
+		<TextBlock HorizontalAlignment="Center" 
+                   Height="30" 
+                   Text="Hello! Welcome to the Purple Tea!" 
+                   TextWrapping="Wrap" 
+                   VerticalAlignment="Top" 
+                   Margin="0,180,0,0"
+                   Width="334"
+                   TextAlignment="Center"
+                   FontSize="16"
+                   Foreground="#3E6328"
+                   FontWeight="Bold"/>
+		<TextBlock HorizontalAlignment="Center" 
+                   Height="50" 
+                   Text="Explore our tea catalog and find your tea mood. Prepare for your next visit of our shop." 
+                   TextWrapping="Wrap" 
+                   VerticalAlignment="Top" 
+                   Margin="0,220,0,0"
+                   Width="334"
+                   TextAlignment="Center"
+                   FontSize="14"
+                   Foreground="#3E6328"/>
+		<Canvas HorizontalAlignment="Left" 
+			Height="55" 
+			Grid.Row="1" 
+			VerticalAlignment="Center" 
+			Width="84" 
+			Margin="6,0,0,0">
+			<Image 
+		  Height="35"
+		  Source="https://uxwing.com/wp-content/themes/uxwing/download/nature-and-environment/green-leaf-icon.png" 
+		  RenderTransformOrigin="0.5,0.5" Canvas.Left="24">
+				<Image.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform Angle="21.984"/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Image.RenderTransform>
+			</Image>
+			<Image 
+		  Height="35"
+		  Source="https://uxwing.com/wp-content/themes/uxwing/download/nature-and-environment/green-leaf-icon.png" 
+		  RenderTransformOrigin="0.5,0.5" Canvas.Top="19">
+				<Image.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform Angle="57.653"/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Image.RenderTransform>
+			</Image>
+			<Image 
+		  Height="35"
+		  Source="https://uxwing.com/wp-content/themes/uxwing/download/nature-and-environment/green-leaf-icon.png" 
+		  RenderTransformOrigin="0.5,0.5" Canvas.Left="50" Canvas.Top="20">
+				<Image.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform Angle="67.054"/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Image.RenderTransform>
+			</Image>
+		</Canvas>
+		<Canvas HorizontalAlignment="Left" 
+			Height="55" 
+			Grid.Row="1" 
+			VerticalAlignment="Center" 
+			Width="95" 
+			Margin="700,0,0,0" RenderTransformOrigin="0.5,0.5">
+			<Canvas.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="-1"/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Canvas.RenderTransform>
+			<Image 
+				Height="35"
+				Source="https://uxwing.com/wp-content/themes/uxwing/download/nature-and-environment/green-leaf-icon.png" 
+				RenderTransformOrigin="0.5,0.5" Canvas.Left="24">
+				<Image.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform Angle="21.984"/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Image.RenderTransform>
+			</Image>
+			<Image 
+				Height="35"
+				Source="https://uxwing.com/wp-content/themes/uxwing/download/nature-and-environment/green-leaf-icon.png" 
+				RenderTransformOrigin="0.5,0.5" Canvas.Top="19">
+				<Image.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform Angle="57.653"/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Image.RenderTransform>
+			</Image>
+			<Image 
+				Height="35"
+				Source="https://uxwing.com/wp-content/themes/uxwing/download/nature-and-environment/green-leaf-icon.png" 
+				RenderTransformOrigin="0.5,0.5" Canvas.Left="50" Canvas.Top="20">
+				<Image.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform Angle="67.054"/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Image.RenderTransform>
+			</Image>
+		</Canvas>
+		<Button Content="Sign up" 
+			HorizontalAlignment="Center" 
+			Height="27" 
+			Margin="0,0,250,0" 
+			Grid.Row="1" 
+			VerticalAlignment="Center" 
+			Background="#B99CD5"
+			Foreground="#503D75"
+			BorderBrush="Transparent"
+			Width="180"/>
+		<Button Content="Login" 
+			HorizontalAlignment="Center" 
+			Height="27" 
+			Margin="250,0,0,0" 
+			Grid.Row="1" 
+			VerticalAlignment="Center" 
+			Background="#B99CD5"
+			Foreground="#503D75"
+			BorderBrush="Transparent"
+			Width="180"	/>
+	</Grid>
+
+</Window>
