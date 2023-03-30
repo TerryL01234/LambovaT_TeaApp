@@ -13,11 +13,11 @@ using System.Windows.Shapes;
 namespace LambovaT_TeaApp
 {
     /// <summary>
-    /// Interaction logic for SingUp.xaml
+    /// Interaction logic for Window1.xaml
     /// </summary>
-    public partial class SingUp : Window
+    public partial class Window1 : Window
     {
-        public SingUp()
+        public Window1()
         {
             InitializeComponent();
         }

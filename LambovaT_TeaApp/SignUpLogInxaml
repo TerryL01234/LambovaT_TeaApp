@@ -158,7 +158,9 @@
 			Background="#B99CD5"
 			Foreground="#503D75"
 			BorderBrush="Transparent"
-			Width="180"/>
+			Width="180"
+			Click="GoSingUp"
+			/>
 		<Button Content="Login" 
 			HorizontalAlignment="Center" 
 			Height="27" 
@@ -168,7 +170,8 @@
 			Background="#B99CD5"
 			Foreground="#503D75"
 			BorderBrush="Transparent"
-			Width="180"	/>
+			Width="180"	
+			Click="GoLogin"/>
 	</Grid>
 
 </Window>

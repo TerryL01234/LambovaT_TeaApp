@@ -24,6 +24,19 @@ namespace LambovaT_TeaApp
         {
             InitializeComponent();
         }
+        private void GoSignUp(object sender, RoutedEventArgs e)
+        {
+            SignUp mwSU = new SignUp();
+            mwSU.Show();
+            this.Close();
+        }
+
+        private void GoLogin(object sender, RoutedEventArgs e)
+        {
+            Login mwLI = new Login();
+            mwLI.Show();
+            this.Close();
+        }
 
     }
 }
