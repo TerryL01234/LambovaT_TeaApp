@@ -6,25 +6,25 @@
         xmlns:local="clr-namespace:LambovaT_TeaApp"
         mc:Ignorable="d"
         Title="TeaCatalogue" 
-        Height="2050" 
+        Height="2850" 
         Width="800"
         Background="#B99CD5">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="1*"/>
-            <RowDefinition Height="35*"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="54*"/>
+            <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Rectangle Grid.ColumnSpan="2" 
-                   HorizontalAlignment="Left" 
+                   HorizontalAlignment="Center" 
                    Height="52" 
                    Stroke="#76AA08" 
                    Fill="#C3E58D"
-                   VerticalAlignment="Center" 
+                   VerticalAlignment="Top" 
                    Width="800"/>
         <Rectangle Grid.ColumnSpan="2" 
                    HorizontalAlignment="Left" 
@@ -480,6 +480,438 @@
                 Grid.ColumnSpan="1"
                 VerticalAlignment="Top"
                 Margin="50,1235,0,0">
+            <Rectangle 
+                Height="160" 
+                Stroke="Transparent" 
+                Fill="#D9F2B1" 
+                Width="350"
+                   />
+            <Label Content="Ceylon"
+                Foreground="#503D75"
+                FontSize="24" 
+                Canvas.Left="10" 
+                Canvas.Top="5"/>
+            <Label Content="Tea type: black tea"
+                Foreground="#3E6328"
+                Height="30"
+                Canvas.Left="10" 
+                Canvas.Top="45"
+            />
+            <Label Content="Caffeine amount: 47 mg per cup"
+                Foreground="#3E6328"
+                Height="30"
+                Canvas.Left="10" 
+                Canvas.Top="65"
+            />
+            <Label Content="Origin: Sri Lanka, China, India"
+                    Foreground="#3E6328"
+                    Height="30"
+                    Canvas.Left="10" 
+                   Canvas.Top="85"
+            />
+            <Label Content="Aroma: citrusy"
+                Foreground="#3E6328"
+                Height="30"
+                Canvas.Left="10" 
+                Canvas.Top="105"
+            />
+            <Label Content="Aftertaste: chocolatey"
+                Foreground="#3E6328"
+                Height="30"
+                Canvas.Left="10" 
+                Canvas.Top="125"
+            />
+            <Image
+                Source="https://i.ibb.co/BzRD4Pj/ceylon.jpg" 
+                Height="140"
+                Width="140" 
+                Canvas.Left="205" 
+                Canvas.Top="10"/>
+        </Canvas>
+        <Canvas HorizontalAlignment="Left" 
+                Grid.Row="1" 
+                Grid.Column="0"
+                Grid.ColumnSpan="1"
+                VerticalAlignment="Top"
+                Margin="50,1395,0,0">
+            <Rectangle 
+                Height="160" 
+                Stroke="Transparent" 
+                Fill="#C3E58D" 
+                Width="350"
+                   />
+            <Label Content="Ceylon"
+                Foreground="#503D75"
+                FontSize="24" 
+                Canvas.Left="150" 
+                Canvas.Top="5"/>
+            <Label Content="Tea type: black tea"
+                Foreground="#3E6328"
+                Height="30"
+                Canvas.Left="150" 
+                Canvas.Top="45"
+            />
+            <Label Content="Caffeine amount: 47 mg per cup"
+                Foreground="#3E6328"
+                Height="30"
+                Canvas.Left="150" 
+                Canvas.Top="65"
+            />
+            <Label Content="Origin: Sri Lanka, China, India"
+                    Foreground="#3E6328"
+                    Height="30"
+                    Canvas.Left="150" 
+                   Canvas.Top="85"
+            />
+            <Label Content="Aroma: citrusy"
+                Foreground="#3E6328"
+                Height="30"
+                Canvas.Left="150" 
+                Canvas.Top="105"
+            />
+            <Label Content="Aftertaste: chocolatey"
+                Foreground="#3E6328"
+                Height="30"
+                Canvas.Left="150" 
+                Canvas.Top="125"
+            />
+            <Image
+                Source="https://i.ibb.co/BzRD4Pj/ceylon.jpg" 
+                Height="140"
+                Width="140" 
+                Canvas.Left="8" 
+                Canvas.Top="10"/>
+        </Canvas>
+        <Canvas HorizontalAlignment="Left" 
+                Grid.Row="1" 
+                Grid.Column="0"
+                Grid.ColumnSpan="1"
+                VerticalAlignment="Top"
+                Margin="50,1555,0,0">
+            <Rectangle 
+                Height="160" 
+                Stroke="Transparent" 
+                Fill="#D9F2B1" 
+                Width="350"
+                   />
+            <Label Content="Ceylon"
+                Foreground="#503D75"
+                FontSize="24" 
+                Canvas.Left="10" 
+                Canvas.Top="5"/>
+            <Label Content="Tea type: black tea"
+                Foreground="#3E6328"
+                Height="30"
+                Canvas.Left="10" 
+                Canvas.Top="45"
+            />
+            <Label Content="Caffeine amount: 47 mg per cup"
+                Foreground="#3E6328"
+                Height="30"
+                Canvas.Left="10" 
+                Canvas.Top="65"
+            />
+            <Label Content="Origin: Sri Lanka, China, India"
+                    Foreground="#3E6328"
+                    Height="30"
+                    Canvas.Left="10" 
+                   Canvas.Top="85"
+            />
+            <Label Content="Aroma: citrusy"
+                Foreground="#3E6328"
+                Height="30"
+                Canvas.Left="10" 
+                Canvas.Top="105"
+            />
+            <Label Content="Aftertaste: chocolatey"
+                Foreground="#3E6328"
+                Height="30"
+                Canvas.Left="10" 
+                Canvas.Top="125"
+            />
+            <Image
+                Source="https://i.ibb.co/BzRD4Pj/ceylon.jpg" 
+                Height="140"
+                Width="140" 
+                Canvas.Left="205" 
+                Canvas.Top="10"/>
+        </Canvas>
+        <Canvas HorizontalAlignment="Left" 
+                Grid.Row="1" 
+                Grid.Column="0"
+                Grid.ColumnSpan="1"
+                VerticalAlignment="Top"
+                Margin="50,1715,0,0">
+            <Rectangle 
+                Height="160" 
+                Stroke="Transparent" 
+                Fill="#C3E58D" 
+                Width="350"
+                   />
+            <Label Content="Ceylon"
+                Foreground="#503D75"
+                FontSize="24" 
+                Canvas.Left="150" 
+                Canvas.Top="5"/>
+            <Label Content="Tea type: black tea"
+                Foreground="#3E6328"
+                Height="30"
+                Canvas.Left="150" 
+                Canvas.Top="45"
+            />
+            <Label Content="Caffeine amount: 47 mg per cup"
+                Foreground="#3E6328"
+                Height="30"
+                Canvas.Left="150" 
+                Canvas.Top="65"
+            />
+            <Label Content="Origin: Sri Lanka, China, India"
+                    Foreground="#3E6328"
+                    Height="30"
+                    Canvas.Left="150" 
+                   Canvas.Top="85"
+            />
+            <Label Content="Aroma: citrusy"
+                Foreground="#3E6328"
+                Height="30"
+                Canvas.Left="150" 
+                Canvas.Top="105"
+            />
+            <Label Content="Aftertaste: chocolatey"
+                Foreground="#3E6328"
+                Height="30"
+                Canvas.Left="150" 
+                Canvas.Top="125"
+            />
+            <Image
+                Source="https://i.ibb.co/BzRD4Pj/ceylon.jpg" 
+                Height="140"
+                Width="140" 
+                Canvas.Left="8" 
+                Canvas.Top="10"/>
+        </Canvas>
+        <Canvas HorizontalAlignment="Left" 
+                Grid.Row="1" 
+                Grid.Column="0"
+                Grid.ColumnSpan="1"
+                VerticalAlignment="Top"
+                Margin="50,1875,0,0">
+            <Rectangle 
+                Height="160" 
+                Stroke="Transparent" 
+                Fill="#D9F2B1" 
+                Width="350"
+                   />
+            <Label Content="Ceylon"
+                Foreground="#503D75"
+                FontSize="24" 
+                Canvas.Left="10" 
+                Canvas.Top="5"/>
+            <Label Content="Tea type: black tea"
+                Foreground="#3E6328"
+                Height="30"
+                Canvas.Left="10" 
+                Canvas.Top="45"
+            />
+            <Label Content="Caffeine amount: 47 mg per cup"
+                Foreground="#3E6328"
+                Height="30"
+                Canvas.Left="10" 
+                Canvas.Top="65"
+            />
+            <Label Content="Origin: Sri Lanka, China, India"
+                    Foreground="#3E6328"
+                    Height="30"
+                    Canvas.Left="10" 
+                   Canvas.Top="85"
+            />
+            <Label Content="Aroma: citrusy"
+                Foreground="#3E6328"
+                Height="30"
+                Canvas.Left="10" 
+                Canvas.Top="105"
+            />
+            <Label Content="Aftertaste: chocolatey"
+                Foreground="#3E6328"
+                Height="30"
+                Canvas.Left="10" 
+                Canvas.Top="125"
+            />
+            <Image
+                Source="https://i.ibb.co/BzRD4Pj/ceylon.jpg" 
+                Height="140"
+                Width="140" 
+                Canvas.Left="205" 
+                Canvas.Top="10"/>
+        </Canvas>
+        <Canvas HorizontalAlignment="Left" 
+                Grid.Row="1" 
+                Grid.Column="0"
+                Grid.ColumnSpan="1"
+                VerticalAlignment="Top"
+                Margin="50,2035,0,0">
+            <Rectangle 
+                Height="160" 
+                Stroke="Transparent" 
+                Fill="#C3E58D" 
+                Width="350"
+                   />
+            <Label Content="Ceylon"
+                Foreground="#503D75"
+                FontSize="24" 
+                Canvas.Left="150" 
+                Canvas.Top="5"/>
+            <Label Content="Tea type: black tea"
+                Foreground="#3E6328"
+                Height="30"
+                Canvas.Left="150" 
+                Canvas.Top="45"
+            />
+            <Label Content="Caffeine amount: 47 mg per cup"
+                Foreground="#3E6328"
+                Height="30"
+                Canvas.Left="150" 
+                Canvas.Top="65"
+            />
+            <Label Content="Origin: Sri Lanka, China, India"
+                    Foreground="#3E6328"
+                    Height="30"
+                    Canvas.Left="150" 
+                   Canvas.Top="85"
+            />
+            <Label Content="Aroma: citrusy"
+                Foreground="#3E6328"
+                Height="30"
+                Canvas.Left="150" 
+                Canvas.Top="105"
+            />
+            <Label Content="Aftertaste: chocolatey"
+                Foreground="#3E6328"
+                Height="30"
+                Canvas.Left="150" 
+                Canvas.Top="125"
+            />
+            <Image
+                Source="https://i.ibb.co/BzRD4Pj/ceylon.jpg" 
+                Height="140"
+                Width="140" 
+                Canvas.Left="8" 
+                Canvas.Top="10"/>
+        </Canvas>
+        <Canvas HorizontalAlignment="Left" 
+                Grid.Row="1" 
+                Grid.Column="0"
+                Grid.ColumnSpan="1"
+                VerticalAlignment="Top"
+                Margin="50,2195,0,0">
+            <Rectangle 
+                Height="160" 
+                Stroke="Transparent" 
+                Fill="#D9F2B1" 
+                Width="350"
+                   />
+            <Label Content="Ceylon"
+                Foreground="#503D75"
+                FontSize="24" 
+                Canvas.Left="10" 
+                Canvas.Top="5"/>
+            <Label Content="Tea type: black tea"
+                Foreground="#3E6328"
+                Height="30"
+                Canvas.Left="10" 
+                Canvas.Top="45"
+            />
+            <Label Content="Caffeine amount: 47 mg per cup"
+                Foreground="#3E6328"
+                Height="30"
+                Canvas.Left="10" 
+                Canvas.Top="65"
+            />
+            <Label Content="Origin: Sri Lanka, China, India"
+                    Foreground="#3E6328"
+                    Height="30"
+                    Canvas.Left="10" 
+                   Canvas.Top="85"
+            />
+            <Label Content="Aroma: citrusy"
+                Foreground="#3E6328"
+                Height="30"
+                Canvas.Left="10" 
+                Canvas.Top="105"
+            />
+            <Label Content="Aftertaste: chocolatey"
+                Foreground="#3E6328"
+                Height="30"
+                Canvas.Left="10" 
+                Canvas.Top="125"
+            />
+            <Image
+                Source="https://i.ibb.co/BzRD4Pj/ceylon.jpg" 
+                Height="140"
+                Width="140" 
+                Canvas.Left="205" 
+                Canvas.Top="10"/>
+        </Canvas>
+        <Canvas HorizontalAlignment="Left" 
+                Grid.Row="1" 
+                Grid.Column="0"
+                Grid.ColumnSpan="1"
+                VerticalAlignment="Top"
+                Margin="50,2355,0,0">
+            <Rectangle 
+                Height="160" 
+                Stroke="Transparent" 
+                Fill="#C3E58D" 
+                Width="350"
+                   />
+            <Label Content="Ceylon"
+                Foreground="#503D75"
+                FontSize="24" 
+                Canvas.Left="150" 
+                Canvas.Top="5"/>
+            <Label Content="Tea type: black tea"
+                Foreground="#3E6328"
+                Height="30"
+                Canvas.Left="150" 
+                Canvas.Top="45"
+            />
+            <Label Content="Caffeine amount: 47 mg per cup"
+                Foreground="#3E6328"
+                Height="30"
+                Canvas.Left="150" 
+                Canvas.Top="65"
+            />
+            <Label Content="Origin: Sri Lanka, China, India"
+                    Foreground="#3E6328"
+                    Height="30"
+                    Canvas.Left="150" 
+                   Canvas.Top="85"
+            />
+            <Label Content="Aroma: citrusy"
+                Foreground="#3E6328"
+                Height="30"
+                Canvas.Left="150" 
+                Canvas.Top="105"
+            />
+            <Label Content="Aftertaste: chocolatey"
+                Foreground="#3E6328"
+                Height="30"
+                Canvas.Left="150" 
+                Canvas.Top="125"
+            />
+            <Image
+                Source="https://i.ibb.co/BzRD4Pj/ceylon.jpg" 
+                Height="140"
+                Width="140" 
+                Canvas.Left="8" 
+                Canvas.Top="10"/>
+        </Canvas>
+        <Canvas HorizontalAlignment="Left" 
+                Grid.Row="1" 
+                Grid.Column="0"
+                Grid.ColumnSpan="1"
+                VerticalAlignment="Top"
+                Margin="50,2515,0,0">
             <Rectangle 
                 Height="160" 
                 Stroke="Transparent" 
