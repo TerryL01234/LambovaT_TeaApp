@@ -13,11 +13,11 @@ using System.Windows.Shapes;
 namespace LambovaT_TeaApp
 {
     /// <summary>
-    /// Interaction logic for Window1.xaml
+    /// Interaction logic for TeaCatalogue.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class TeaCatalogue : Window
     {
-        public Window1()
+        public TeaCatalogue()
         {
             InitializeComponent();
         }

@@ -95,12 +95,13 @@
 				</Image.RenderTransform>
 			</Image>
 		</Canvas>
-		<Canvas HorizontalAlignment="Left" 
+		<Canvas HorizontalAlignment="Right" 
 			Height="55" 
 			Grid.Row="1" 
 			VerticalAlignment="Center" 
 			Width="95" 
-			Margin="700,0,0,0" RenderTransformOrigin="0.5,0.5">
+			Margin="0,0,0,0" 
+            RenderTransformOrigin="0.5,0.5">
 			<Canvas.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform ScaleX="-1"/>
@@ -159,7 +160,7 @@
 			Foreground="#503D75"
 			BorderBrush="Transparent"
 			Width="180"
-			Click="GoSingUp"
+			Click="GoSignUp"
 			/>
 		<Button Content="Login" 
 			HorizontalAlignment="Center" 

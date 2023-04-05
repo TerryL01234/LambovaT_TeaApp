@@ -6,12 +6,4 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
-  <ItemGroup>
-    <None Remove="SignUpLogInxaml" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Page Include="SignUpLogInxaml" />
-  </ItemGroup>
-
 </Project>
