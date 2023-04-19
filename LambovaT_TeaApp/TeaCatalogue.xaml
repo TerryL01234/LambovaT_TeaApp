@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="TeaCatalogue" 
         Width="800"
-        Height="550"
+        Height="3550"
         ResizeMode="NoResize"
         Background="#B99CD5">
     <ScrollViewer CanContentScroll="True" 
@@ -22,7 +22,7 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            
+
             <Rectangle Grid.ColumnSpan="2" 
                    HorizontalAlignment="Center" 
                    Height="58" 
@@ -31,12 +31,14 @@
                    VerticalAlignment="Top" 
                    Width="800"/>
             <Label Content="Purple Tea"
-                   Grid.Row="0"
-                   FontSize="18"
+                   FontSize="22"
                    Foreground="#503D75"
                    VerticalAlignment="Center"
                    HorizontalAlignment="Left"
-                   Margin="5,0,0,3"/>
+                   FontFamily="SWScrps"
+                   Margin="5,2,0,0" 
+                   FontWeight="Bold" 
+                   FontStyle="Normal"/>
             <Button Content="About us"
                     Grid.Row="0"
                     Grid.Column="0"
@@ -48,43 +50,52 @@
                     VerticalAlignment="Center"
                     HorizontalAlignment="Right"
                     Margin="0,0,5,0"
+                    FontFamily="RomanD" 
+                    FontWeight="Bold"
+                    FontSize="12"
                     Click="AbUs"/>
             <Button Content="Personal tea"
                     Grid.Row="0"
                     Grid.Column="0"
                     Grid.ColumnSpan="2"
-                    Width="100"
+                    Width="130"
                     Foreground="#76AA08"
                     Background="Transparent"
                     BorderBrush="Transparent"
                     VerticalAlignment="Center"
                     HorizontalAlignment="Right"
                     Margin="0,0,105,0"
+                    FontFamily="RomanD" 
+                    FontWeight="Bold"
+                    FontSize="12"
                     Click="PersTea"/>
             <Button Content="Bubble tea specifics"
-                    Grid.Row="0"
-                    Grid.Column="0"
-                    Grid.ColumnSpan="2"
-                    Width="120"
+                    Width="180"
                     Foreground="#76AA08"
                     Background="Transparent"
                     BorderBrush="Transparent"
                     VerticalAlignment="Center"
-                    HorizontalAlignment="Right"
-                    Margin="0,0,215,0"
-                    Click="BubbleTeaSpec"/>
+                    HorizontalAlignment="Left"
+                    Margin="368,0,0,0"
+                    FontFamily="RomanD" 
+                    FontWeight="Bold"
+                    FontSize="12"
+                    Click="BubbleTeaSpec" Grid.ColumnSpan="2" 
+                    />
             <Button Content="Catalogue"
-                    Grid.Row="0"
                     Grid.Column="0"
-                    Grid.ColumnSpan="2"
-                    Width="120"
+                    Width="100"
                     Foreground="#76AA08"
                     Background="Transparent"
                     BorderBrush="Transparent"
                     VerticalAlignment="Center"
-                    HorizontalAlignment="Right"
-                    Margin="0,0,345,0" 
-                    Click="Catalogue"/>
+                    HorizontalAlignment="Left"
+                    Margin="268,0,0,0"
+                    FontFamily="RomanD" 
+                    FontWeight="Bold"
+                    FontSize="12"
+                    Click="Catalogue" 
+                     />
             <Rectangle Grid.ColumnSpan="2"
                        Grid.Column="0"
                    HorizontalAlignment="Left" 
@@ -156,7 +167,9 @@
                Grid.ColumnSpan="2"
                Grid.Row="1"
                Margin="0,20,0,0"
-               FontSize="40"/>
+               FontSize="50"
+               FontFamily="SWScrps"
+               FontWeight="Bold"/>
             <Canvas HorizontalAlignment="Left" 
                 Grid.Row="1" 
                 Grid.Column="0"
@@ -173,7 +186,9 @@
                 Foreground="#503D75"
                 FontSize="24" 
                 Canvas.Left="150" 
-                Canvas.Top="5"/>
+                Canvas.Top="5"
+               FontFamily="SWScrps"
+               FontWeight="Normal"/>
                 <Label Content="Tea type: black tea"
                 Foreground="#3E6328"
                 Height="30"
@@ -227,7 +242,9 @@
                 Foreground="#503D75"
                 FontSize="24" 
                 Canvas.Left="10" 
-                Canvas.Top="5"/>
+                Canvas.Top="5"
+                       FontFamily="SWScrps"
+               FontWeight="Normal"/>
                 <Label Content="Tea type: black tea"
                 Foreground="#3E6328"
                 Height="30"
@@ -281,7 +298,7 @@
                 Foreground="#503D75"
                 FontSize="24" 
                 Canvas.Left="150" 
-                Canvas.Top="5"/>
+                Canvas.Top="5" FontFamily="SWScrps" FontWeight="Normal"/>
                 <Label Content="Tea type: black tea"
                 Foreground="#3E6328"
                 Height="30"
@@ -335,7 +352,7 @@
                 Foreground="#503D75"
                 FontSize="24" 
                 Canvas.Left="10" 
-                Canvas.Top="5"/>
+                Canvas.Top="5" FontFamily="SWScrps" FontWeight="Normal"/>
                 <Label Content="Tea type: black tea"
                 Foreground="#3E6328"
                 Height="30"
@@ -389,7 +406,7 @@
                 Foreground="#503D75"
                 FontSize="24" 
                 Canvas.Left="150" 
-                Canvas.Top="5"/>
+                Canvas.Top="5" FontFamily="SWScrps" FontWeight="Normal"/>
                 <Label Content="Tea type: black tea"
                 Foreground="#3E6328"
                 Height="30"
@@ -443,7 +460,7 @@
                 Foreground="#503D75"
                 FontSize="24" 
                 Canvas.Left="10" 
-                Canvas.Top="5"/>
+                Canvas.Top="5" FontFamily="SWScrps" FontWeight="Normal"/>
                 <Label Content="Tea type: black tea"
                 Foreground="#3E6328"
                 Height="30"
@@ -497,7 +514,7 @@
                 Foreground="#503D75"
                 FontSize="24" 
                 Canvas.Left="150" 
-                Canvas.Top="5"/>
+                Canvas.Top="5" FontFamily="SWScrps" FontWeight="Normal"/>
                 <Label Content="Tea type: black tea"
                 Foreground="#3E6328"
                 Height="30"
@@ -551,7 +568,7 @@
                 Foreground="#503D75"
                 FontSize="24" 
                 Canvas.Left="10" 
-                Canvas.Top="5"/>
+                Canvas.Top="5" FontFamily="SWScrps" FontWeight="Normal"/>
                 <Label Content="Tea type: black tea"
                 Foreground="#3E6328"
                 Height="30"
@@ -605,7 +622,7 @@
                 Foreground="#503D75"
                 FontSize="24" 
                 Canvas.Left="150" 
-                Canvas.Top="5"/>
+                Canvas.Top="5" FontFamily="SWScrps" FontWeight="Normal"/>
                 <Label Content="Tea type: black tea"
                 Foreground="#3E6328"
                 Height="30"
@@ -659,7 +676,7 @@
                 Foreground="#503D75"
                 FontSize="24" 
                 Canvas.Left="10" 
-                Canvas.Top="5"/>
+                Canvas.Top="5" FontFamily="SWScrps" FontWeight="Normal"/>
                 <Label Content="Tea type: black tea"
                 Foreground="#3E6328"
                 Height="30"
@@ -713,7 +730,7 @@
                 Foreground="#503D75"
                 FontSize="24" 
                 Canvas.Left="150" 
-                Canvas.Top="5"/>
+                Canvas.Top="5" FontFamily="SWScrps" FontWeight="Normal"/>
                 <Label Content="Tea type: black tea"
                 Foreground="#3E6328"
                 Height="30"
@@ -767,7 +784,7 @@
                 Foreground="#503D75"
                 FontSize="24" 
                 Canvas.Left="10" 
-                Canvas.Top="5"/>
+                Canvas.Top="5" FontFamily="SWScrps" FontWeight="Normal"/>
                 <Label Content="Tea type: black tea"
                 Foreground="#3E6328"
                 Height="30"
@@ -821,7 +838,7 @@
                 Foreground="#503D75"
                 FontSize="24" 
                 Canvas.Left="150" 
-                Canvas.Top="5"/>
+                Canvas.Top="5" FontFamily="SWScrps" FontWeight="Normal"/>
                 <Label Content="Tea type: black tea"
                 Foreground="#3E6328"
                 Height="30"
@@ -875,7 +892,7 @@
                 Foreground="#503D75"
                 FontSize="24" 
                 Canvas.Left="10" 
-                Canvas.Top="5"/>
+                Canvas.Top="5" FontFamily="SWScrps" FontWeight="Normal"/>
                 <Label Content="Tea type: black tea"
                 Foreground="#3E6328"
                 Height="30"
@@ -929,7 +946,7 @@
                 Foreground="#503D75"
                 FontSize="24" 
                 Canvas.Left="150" 
-                Canvas.Top="5"/>
+                Canvas.Top="5" FontFamily="SWScrps" FontWeight="Normal"/>
                 <Label Content="Tea type: black tea"
                 Foreground="#3E6328"
                 Height="30"
@@ -984,7 +1001,7 @@
                 Foreground="#503D75"
                 FontSize="24" 
                 Canvas.Left="10" 
-                Canvas.Top="5"/>
+                Canvas.Top="5" FontFamily="SWScrps" FontWeight="Normal"/>
                 <Label Content="Tea type: black tea"
                 Foreground="#3E6328"
                 Height="30"
@@ -1038,7 +1055,9 @@
                 Foreground="#503D75"
                 FontSize="24" 
                 Canvas.Left="150" 
-                Canvas.Top="5"/>
+                Canvas.Top="5"
+               FontFamily="SWScrps"
+               FontWeight="Normal"/>
                 <Label Content="Tea type: black tea"
                 Foreground="#3E6328"
                 Height="30"
@@ -1092,7 +1111,9 @@
                 Foreground="#503D75"
                 FontSize="24" 
                 Canvas.Left="10" 
-                Canvas.Top="5"/>
+                Canvas.Top="5"
+                FontFamily="SWScrps"
+               FontWeight="Normal"/>
                 <Label Content="Tea type: black tea"
                 Foreground="#3E6328"
                 Height="30"
@@ -1146,7 +1167,7 @@
                 Foreground="#503D75"
                 FontSize="24" 
                 Canvas.Left="150" 
-                Canvas.Top="5"/>
+                Canvas.Top="5" FontFamily="SWScrps" FontWeight="Normal"/>
                 <Label Content="Tea type: black tea"
                 Foreground="#3E6328"
                 Height="30"
@@ -1200,7 +1221,7 @@
                 Foreground="#503D75"
                 FontSize="24" 
                 Canvas.Left="10" 
-                Canvas.Top="5"/>
+                Canvas.Top="5" FontFamily="SWScrps" FontWeight="Normal"/>
                 <Label Content="Tea type: black tea"
                 Foreground="#3E6328"
                 Height="30"
@@ -1254,7 +1275,7 @@
                 Foreground="#503D75"
                 FontSize="24" 
                 Canvas.Left="150" 
-                Canvas.Top="5"/>
+                Canvas.Top="5" FontFamily="SWScrps" FontWeight="Normal"/>
                 <Label Content="Tea type: black tea"
                 Foreground="#3E6328"
                 Height="30"
@@ -1308,7 +1329,7 @@
                 Foreground="#503D75"
                 FontSize="24" 
                 Canvas.Left="10" 
-                Canvas.Top="5"/>
+                Canvas.Top="5" FontFamily="SWScrps" FontWeight="Normal"/>
                 <Label Content="Tea type: black tea"
                 Foreground="#3E6328"
                 Height="30"
@@ -1362,7 +1383,7 @@
                 Foreground="#503D75"
                 FontSize="24" 
                 Canvas.Left="150" 
-                Canvas.Top="5"/>
+                Canvas.Top="5" FontFamily="SWScrps" FontWeight="Normal"/>
                 <Label Content="Tea type: black tea"
                 Foreground="#3E6328"
                 Height="30"
@@ -1416,7 +1437,7 @@
                 Foreground="#503D75"
                 FontSize="24" 
                 Canvas.Left="10" 
-                Canvas.Top="5"/>
+                Canvas.Top="5" FontFamily="SWScrps" FontWeight="Normal"/>
                 <Label Content="Tea type: black tea"
                 Foreground="#3E6328"
                 Height="30"
@@ -1470,7 +1491,7 @@
                 Foreground="#503D75"
                 FontSize="24" 
                 Canvas.Left="150" 
-                Canvas.Top="5"/>
+                Canvas.Top="5" FontFamily="SWScrps" FontWeight="Normal"/>
                 <Label Content="Tea type: black tea"
                 Foreground="#3E6328"
                 Height="30"
@@ -1524,7 +1545,7 @@
                 Foreground="#503D75"
                 FontSize="24" 
                 Canvas.Left="10" 
-                Canvas.Top="5"/>
+                Canvas.Top="5" FontFamily="SWScrps" FontWeight="Normal"/>
                 <Label Content="Tea type: black tea"
                 Foreground="#3E6328"
                 Height="30"
@@ -1578,7 +1599,7 @@
                 Foreground="#503D75"
                 FontSize="24" 
                 Canvas.Left="150" 
-                Canvas.Top="5"/>
+                Canvas.Top="5" FontFamily="SWScrps" FontWeight="Normal"/>
                 <Label Content="Tea type: black tea"
                 Foreground="#3E6328"
                 Height="30"
@@ -1632,7 +1653,7 @@
                 Foreground="#503D75"
                 FontSize="24" 
                 Canvas.Left="10" 
-                Canvas.Top="5"/>
+                Canvas.Top="5" FontFamily="SWScrps" FontWeight="Normal"/>
                 <Label Content="Tea type: black tea"
                 Foreground="#3E6328"
                 Height="30"
@@ -1686,7 +1707,7 @@
                 Foreground="#503D75"
                 FontSize="24" 
                 Canvas.Left="150" 
-                Canvas.Top="5"/>
+                Canvas.Top="5" FontFamily="SWScrps" FontWeight="Normal"/>
                 <Label Content="Tea type: black tea"
                 Foreground="#3E6328"
                 Height="30"
@@ -1740,7 +1761,7 @@
                 Foreground="#503D75"
                 FontSize="24" 
                 Canvas.Left="10" 
-                Canvas.Top="5"/>
+                Canvas.Top="5" FontFamily="SWScrps" FontWeight="Normal"/>
                 <Label Content="Tea type: black tea"
                 Foreground="#3E6328"
                 Height="30"
@@ -1794,7 +1815,7 @@
                 Foreground="#503D75"
                 FontSize="24" 
                 Canvas.Left="150" 
-                Canvas.Top="5"/>
+                Canvas.Top="5" FontFamily="SWScrps" FontWeight="Normal"/>
                 <Label Content="Tea type: black tea"
                 Foreground="#3E6328"
                 Height="30"
@@ -1849,7 +1870,7 @@
                 Foreground="#503D75"
                 FontSize="24" 
                 Canvas.Left="10" 
-                Canvas.Top="5"/>
+                Canvas.Top="5" FontFamily="SWScrps" FontWeight="Normal"/>
                 <Label Content="Tea type: black tea"
                 Foreground="#3E6328"
                 Height="30"
