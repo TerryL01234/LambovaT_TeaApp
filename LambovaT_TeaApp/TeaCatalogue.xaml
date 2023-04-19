@@ -14,9 +14,9 @@
                   VerticalScrollBarVisibility="Visible">
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="2*"/>
-                <RowDefinition Height="95*"/>
-                <RowDefinition Height="3*"/>
+                <RowDefinition Height="58"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="87"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
@@ -47,8 +47,9 @@
                     BorderBrush="Transparent"
                     VerticalAlignment="Center"
                     HorizontalAlignment="Right"
-                    Margin="0,0,5,0"/>
-            <Button Content="Tea quiz"
+                    Margin="0,0,5,0"
+                    Click="AbUs"/>
+            <Button Content="Personal tea"
                     Grid.Row="0"
                     Grid.Column="0"
                     Grid.ColumnSpan="2"
@@ -58,7 +59,8 @@
                     BorderBrush="Transparent"
                     VerticalAlignment="Center"
                     HorizontalAlignment="Right"
-                    Margin="0,0,105,0"/>
+                    Margin="0,0,105,0"
+                    Click="PersTea"/>
             <Button Content="Bubble tea specifics"
                     Grid.Row="0"
                     Grid.Column="0"
@@ -69,7 +71,8 @@
                     BorderBrush="Transparent"
                     VerticalAlignment="Center"
                     HorizontalAlignment="Right"
-                    Margin="0,0,215,0"/>
+                    Margin="0,0,215,0"
+                    Click="BubbleTeaSpec"/>
             <Button Content="Catalogue"
                     Grid.Row="0"
                     Grid.Column="0"
@@ -80,7 +83,8 @@
                     BorderBrush="Transparent"
                     VerticalAlignment="Center"
                     HorizontalAlignment="Right"
-                    Margin="0,0,345,0"/>
+                    Margin="0,0,345,0" 
+                    Click="Catalogue"/>
             <Rectangle Grid.ColumnSpan="2"
                        Grid.Column="0"
                    HorizontalAlignment="Left" 
@@ -100,15 +104,15 @@
                    VerticalAlignment="Bottom" 
                    Width="800"/>
             <Canvas HorizontalAlignment="Left" 
-			Height="60" 
-			Grid.Row="1" 
-			VerticalAlignment="Top" 
-			Width="90" 
-			Margin="6,10,0,0">
+			        Height="60" 
+			        Grid.Row="1" 
+			        VerticalAlignment="Top" 
+			        Width="90" 
+			        Margin="6,10,0,0">
                 <Image 
-		  Height="40"
-		  Source="https://uxwing.com/wp-content/themes/uxwing/download/nature-and-environment/green-leaf-icon.png" 
-		  RenderTransformOrigin="0.5,0.5" Canvas.Left="30">
+		        Height="40"
+		        Source="https://uxwing.com/wp-content/themes/uxwing/download/nature-and-environment/green-leaf-icon.png" 
+		        RenderTransformOrigin="0.5,0.5" Canvas.Left="30">
                     <Image.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
@@ -119,9 +123,9 @@
                     </Image.RenderTransform>
                 </Image>
                 <Image 
-		  Height="40"
-		  Source="https://uxwing.com/wp-content/themes/uxwing/download/nature-and-environment/green-leaf-icon.png" 
-		  RenderTransformOrigin="0.5,0.5" Canvas.Top="19">
+		        Height="40"
+		        Source="https://uxwing.com/wp-content/themes/uxwing/download/nature-and-environment/green-leaf-icon.png" 
+		        RenderTransformOrigin="0.5,0.5" Canvas.Top="19">
                     <Image.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
@@ -132,9 +136,9 @@
                     </Image.RenderTransform>
                 </Image>
                 <Image 
-		  Height="40"
-		  Source="https://uxwing.com/wp-content/themes/uxwing/download/nature-and-environment/green-leaf-icon.png" 
-		  RenderTransformOrigin="0.5,0.5" Canvas.Left="60" Canvas.Top="20">
+		        Height="40"
+		        Source="https://uxwing.com/wp-content/themes/uxwing/download/nature-and-environment/green-leaf-icon.png" 
+		        RenderTransformOrigin="0.5,0.5" Canvas.Left="60" Canvas.Top="20">
                     <Image.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>

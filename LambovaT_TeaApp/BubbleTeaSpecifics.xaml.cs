@@ -13,15 +13,14 @@ using System.Windows.Shapes;
 namespace LambovaT_TeaApp
 {
     /// <summary>
-    /// Interaction logic for TeaCatalogue.xaml
+    /// Interaction logic for BubbleTeaSpecifics.xaml
     /// </summary>
-    public partial class TeaCatalogue : Window
+    public partial class BubbleTeaSpecifics : Window
     {
-        public TeaCatalogue()
+        public BubbleTeaSpecifics()
         {
             InitializeComponent();
         }
-
         private void Catalogue(object sender, RoutedEventArgs e)
         {
             TeaCatalogue mwC = new TeaCatalogue();

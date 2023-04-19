@@ -21,7 +21,12 @@ namespace LambovaT_TeaApp
         {
             InitializeComponent();
         }
+        private void Confirm(object sender, RoutedEventArgs e)
+        {
+            TeaCatalogue mwC = new TeaCatalogue();
+            mwC.Show();
+            this.Close();
+        }
 
-       
     }
 }

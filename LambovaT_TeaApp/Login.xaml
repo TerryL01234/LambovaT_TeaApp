@@ -82,6 +82,7 @@
                 Foreground="#503D75"
                 Margin="0,0,0,110" 
                 BorderBrush="Transparent"
+                Click="Confirm"
                 />
 
         <TextBlock HorizontalAlignment="Center" 
