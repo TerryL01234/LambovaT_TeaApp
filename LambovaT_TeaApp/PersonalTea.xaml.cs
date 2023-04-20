@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -45,5 +47,51 @@ namespace LambovaT_TeaApp
             mwAU.Show();
             this.Close();
         }
+
+        private void Entry(object sender, RoutedEventArgs e)
+        {
+            SqlConnection sqlCon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=H:\2022_2023\Informatics\Applications\FinalTeaApp\LambovaT_TeaApp\LambovaT_TeaApp\TeaDB.mdf;Integrated Security=True");
+            try
+            {
+                sqlCon.Open();
+                string dateToday = DateTime.Now.ToString("dd/MM/yyyy");
+                string query = "INSERT INTO TeaTable(EntryDate,EntryNotes)values ('" + dateToday + "','" + this.TeaEntry.Text + "') ";
+
+                SqlCommand cmd = new SqlCommand(query, sqlCon);
+                cmd.ExecuteNonQuery();
+
+                MessageBox.Show("Successfully saved");
+
+                PersonalTea mwPT = new PersonalTea();
+                mwPT.Show();
+                this.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+
+            SqlConnection sqlCon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=H:\2022_2023\Informatics\Applications\FinalTeaApp\LambovaT_TeaApp\LambovaT_TeaApp\TeaDB.mdf;Integrated Security=True");
+            try
+            {
+                string query = "SELECT * FROM TeaTable";
+                SqlDataAdapter dataAdapter = new SqlDataAdapter(query, sqlCon);
+
+                DataSet dataSet = new DataSet();
+                dataAdapter.Fill(dataSet);
+
+                PreviousTea.ItemsSource = dataSet.Tables[0].DefaultView;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
     }
 }
