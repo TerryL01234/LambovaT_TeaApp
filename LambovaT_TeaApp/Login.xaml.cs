@@ -40,7 +40,7 @@ namespace LambovaT_TeaApp
                 using (SqlConnection cnxn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=H:\2022_2023\Informatics\Applications\FinalTeaApp\LambovaT_TeaApp\LambovaT_TeaApp\TeaDB.mdf;Integrated Security=True"))
                 {
                     // Create a SqlCommand to retrieve the email and password from the Users table
-                    SqlCommand cmd = new SqlCommand("SELECT email, password FROM Users WHERE email=@Email", cnxn);
+                    SqlCommand cmd = new SqlCommand("SELECT Email, Pass FROM Users WHERE emailRetrieved=@Email", cnxn);
                     cmd.Parameters.AddWithValue("@Email", enteredEmail);
 
                     cnxn.Open();
@@ -52,7 +52,7 @@ namespace LambovaT_TeaApp
                         emailRetrieved = reader["Email"].ToString();
                         if (enteredEmail == emailRetrieved)
                         {
-                            passRetrieved = reader["password"].ToString();
+                            passRetrieved = reader["Pass"].ToString();
                             if (enteredPassword == passRetrieved)
                             {
                                 MessageBox.Show("Login successful!");
@@ -67,7 +67,6 @@ namespace LambovaT_TeaApp
                         else
                         {
                             MessageBox.Show("Email not found, login unsuccessful.");
-
                         }
                     }
                     reader.Close();
