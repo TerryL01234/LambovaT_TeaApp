@@ -23,32 +23,32 @@
                    Text="Sign Up or Login" 
                    TextWrapping="Wrap" 
                    VerticalAlignment="Top" 
-                   Margin="0,70,0,0"
-                   Width="334"
+                   Margin="0,80,0,0"
+                   Width="400"
                    TextAlignment="Center"
-                   FontSize="40"
-                   Foreground="#503D75"/>
+                   FontSize="48"
+                   Foreground="#503D75" FontFamily="SWScrps" FontWeight="Bold"/>
         <TextBlock HorizontalAlignment="Center" 
                    Height="30" 
                    Text="Hello! Welcome to the Purple Tea!" 
                    TextWrapping="Wrap" 
                    VerticalAlignment="Top" 
-                   Margin="0,180,0,0"
-                   Width="334"
+                   Margin="0,170,0,0"
+                   Width="400"
                    TextAlignment="Center"
                    FontSize="16"
                    Foreground="#3E6328"
-                   FontWeight="Bold"/>
+                   FontWeight="Bold" FontFamily="RomanD"/>
         <TextBlock HorizontalAlignment="Center" 
-                   Height="50" 
+                   Height="60" 
                    Text="Explore our tea catalog and find your tea mood. Prepare for your next visit of our shop." 
                    TextWrapping="Wrap" 
                    VerticalAlignment="Top" 
-                   Margin="0,220,0,0"
-                   Width="334"
+                   Margin="0,210,0,0"
+                   Width="350"
                    TextAlignment="Center"
                    FontSize="14"
-                   Foreground="#3E6328"/>
+                   Foreground="#3E6328" FontFamily="RomanD"/>
         <Canvas HorizontalAlignment="Left" 
 			Height="55" 
 			Grid.Row="1" 
@@ -209,7 +209,7 @@
 			Foreground="#503D75"
 			BorderBrush="Transparent"
 			Width="180"
-			Click="GoSignUp"
+			Click="GoSignUp" TextBlock.FontFamily="RomanD" FontWeight="Bold"
 			/>
         <Button Content="Login" 
 			HorizontalAlignment="Center" 
@@ -221,7 +221,7 @@
 			Foreground="#503D75"
 			BorderBrush="Transparent"
 			Width="180"	
-			Click="GoLogin"/>
+			Click="GoLogin" TextBlock.FontFamily="RomanD" FontWeight="Bold"/>
     </Grid>
 
 </Window>

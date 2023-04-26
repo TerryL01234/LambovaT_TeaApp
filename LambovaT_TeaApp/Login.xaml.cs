@@ -27,7 +27,61 @@ namespace LambovaT_TeaApp
         }
         private void Confirm(object sender, RoutedEventArgs e)
         {
-            SqlConnection sqlCon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=H:\2022_2023\Informatics\Applications\FinalTeaApp\LambovaT_TeaApp\LambovaT_TeaApp\TeaDB.mdf;Integrated Security=True");
+            try
+            {
+                // Code to retrieve user's entered email and password from the login form
+                string enteredEmail = Email.Text;
+                string enteredPassword = Pass.Password;
+
+                // Retrieve user's email and password from the database
+                string emailRetrieved = "";
+                string passRetrieved = "";
+
+                using (SqlConnection cnxn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=H:\2022_2023\Informatics\Applications\FinalTeaApp\LambovaT_TeaApp\LambovaT_TeaApp\TeaDB.mdf;Integrated Security=True"))
+                {
+                    // Create a SqlCommand to retrieve the email and password from the Users table
+                    SqlCommand cmd = new SqlCommand("SELECT email, password FROM Users WHERE email=@Email", cnxn);
+                    cmd.Parameters.AddWithValue("@Email", enteredEmail);
+
+                    cnxn.Open();
+
+                    // Execute the SqlCommand and retrieve the email and password from the database
+                    SqlDataReader reader = cmd.ExecuteReader();
+                    if (reader.Read())
+                    {
+                        emailRetrieved = reader["Email"].ToString();
+                        if (enteredEmail == emailRetrieved)
+                        {
+                            passRetrieved = reader["password"].ToString();
+                            if (enteredPassword == passRetrieved)
+                            {
+                                MessageBox.Show("Login successful!");
+                                reader.Close();
+                                cnxn.Close();
+                            }
+                            else
+                            {
+                                MessageBox.Show("Incorrect password, login unsuccessful.");
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("Email not found, login unsuccessful.");
+
+                        }
+                    }
+                    reader.Close();
+                    cnxn.Close();
+                }
+
+                
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+            /*SqlConnection sqlCon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=H:\2022_2023\Informatics\Applications\FinalTeaApp\LambovaT_TeaApp\LambovaT_TeaApp\TeaDB.mdf;Integrated Security=True");
             try
             {
                 sqlCon.Open();
@@ -58,7 +112,7 @@ namespace LambovaT_TeaApp
             string GetPassword()
             {
                 return Pass.Password;
-            }
+            }*/
         }
     }
 }
