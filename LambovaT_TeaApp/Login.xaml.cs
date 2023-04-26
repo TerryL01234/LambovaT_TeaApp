@@ -40,7 +40,7 @@ namespace LambovaT_TeaApp
                 using (SqlConnection cnxn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=H:\2022_2023\Informatics\Applications\FinalTeaApp\LambovaT_TeaApp\LambovaT_TeaApp\TeaDB.mdf;Integrated Security=True"))
                 {
                     // Create a SqlCommand to retrieve the email and password from the Users table
-                    SqlCommand cmd = new SqlCommand("SELECT Email, Pass FROM Users WHERE emailRetrieved=@Email", cnxn);
+                    SqlCommand cmd = new SqlCommand("SELECT Email, Pass FROM Users WHERE Email=@Email", cnxn);
                     cmd.Parameters.AddWithValue("@Email", enteredEmail);
 
                     cnxn.Open();
@@ -55,9 +55,12 @@ namespace LambovaT_TeaApp
                             passRetrieved = reader["Pass"].ToString();
                             if (enteredPassword == passRetrieved)
                             {
-                                MessageBox.Show("Login successful!");
+                                MessageBox.Show("Welcome back!");
                                 reader.Close();
                                 cnxn.Close();
+                                TeaCatalogue mwC = new TeaCatalogue();
+                                mwC.Show();
+                                this.Close();
                             }
                             else
                             {
@@ -79,39 +82,6 @@ namespace LambovaT_TeaApp
             {
                 MessageBox.Show(ex.Message);
             }
-
-            /*SqlConnection sqlCon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=H:\2022_2023\Informatics\Applications\FinalTeaApp\LambovaT_TeaApp\LambovaT_TeaApp\TeaDB.mdf;Integrated Security=True");
-            try
-            {
-                sqlCon.Open();
-                string query = "SELECT Pass FROM Users WHERE Email='this.Email'";
-                SqlCommand cmd = new SqlCommand(query, sqlCon);
-                object result = cmd.ExecuteScalar();
-                string passTable = (result == null ? "" : result.ToString());
-                cmd.ExecuteNonQuery();
-
-                if (!(GetPassword() == passTable))
-                {
-                    MessageBox.Show("Passwords don't match.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-                }
-                else
-                {
-                    MessageBox.Show("Welcome back!");
-
-                    TeaCatalogue mwC = new TeaCatalogue();
-                    mwC.Show();
-                    this.Close();
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-
-            string GetPassword()
-            {
-                return Pass.Password;
-            }*/
         }
     }
 }

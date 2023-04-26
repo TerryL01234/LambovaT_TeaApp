@@ -44,7 +44,7 @@
                     FontWeight="Bold"
                     FontSize="12"
                     Click="AbUs"/>
-        <Button Content="Personal tea"
+        <Button Content="Anonymous tea"
                     Grid.Column="0"
                     Width="125"
                     Foreground="#76AA08"
