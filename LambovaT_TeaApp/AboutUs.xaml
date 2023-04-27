@@ -223,7 +223,7 @@
                    Grid.RowSpan="1"
                    VerticalAlignment="Top" 
                    Width="750"
-                   Margin="0,110,0,0"/>
+                   Margin="0,110,0,50"/>
             <Label Content="History"
                Foreground="#76AA08"
                VerticalAlignment="Top"

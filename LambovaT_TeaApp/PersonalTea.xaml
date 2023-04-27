@@ -277,7 +277,7 @@
             <DataGrid x:Name="PreviousTea"
             HorizontalAlignment="Center" 
                   Height="330" 
-                  Margin="0,370,0,25" 
+                  Margin="0,370,0,50" 
                   Grid.Row="1" 
                   VerticalAlignment="Top" 
                   Width="700"
