@@ -37,7 +37,7 @@ namespace LambovaT_TeaApp
                 string emailRetrieved = "";
                 string passRetrieved = "";
 
-                using (SqlConnection cnxn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=H:\2022_2023\Informatics\Applications\FinalTeaApp\LambovaT_TeaApp\LambovaT_TeaApp\TeaDB.mdf;Integrated Security=True"))
+                using (SqlConnection cnxn = new SqlConnection(@"Data Source = DESKTOP-SDEJ6HG; Initial Catalog=Tea; Integrated Security=True"))
                 {
                     // Create a SqlCommand to retrieve the email and password from the Users table
                     SqlCommand cmd = new SqlCommand("SELECT Email, Pass FROM Users WHERE Email=@Email", cnxn);

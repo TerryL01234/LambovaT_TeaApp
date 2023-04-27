@@ -38,7 +38,7 @@ namespace LambovaT_TeaApp
             }
             else
             {
-                SqlConnection sqlCon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=H:\2022_2023\Informatics\Applications\FinalTeaApp\LambovaT_TeaApp\LambovaT_TeaApp\TeaDB.mdf;Integrated Security=True");
+                SqlConnection sqlCon = new SqlConnection(@"Data Source = DESKTOP-SDEJ6HG; Initial Catalog=Tea; Integrated Security=True");
                 try
                 {
                     sqlCon.Open();

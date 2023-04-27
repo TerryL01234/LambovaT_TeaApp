@@ -50,12 +50,12 @@ namespace LambovaT_TeaApp
 
         private void Entry(object sender, RoutedEventArgs e)
         {
-            SqlConnection sqlCon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=H:\2022_2023\Informatics\Applications\FinalTeaApp\LambovaT_TeaApp\LambovaT_TeaApp\TeaDB.mdf;Integrated Security=True");
+            SqlConnection sqlCon = new SqlConnection(@"Data Source = DESKTOP-SDEJ6HG; Initial Catalog=Tea; Integrated Security=True");
             try
             {
                 sqlCon.Open();
                 string dateToday = DateTime.Now.ToString("dd/MM/yyyy");
-                string query = "INSERT INTO TeaTable(EntryDate,EntryNotes)values ('" + dateToday + "','" + this.TeaEntry.Text + "') ";
+                string query = "INSERT INTO AllTheTea(EntryDate,EntryNotes)values ('" + dateToday + "','" + this.TeaEntry.Text + "') ";
 
                 SqlCommand cmd = new SqlCommand(query, sqlCon);
                 cmd.ExecuteNonQuery();
@@ -76,10 +76,10 @@ namespace LambovaT_TeaApp
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
 
-            SqlConnection sqlCon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=H:\2022_2023\Informatics\Applications\FinalTeaApp\LambovaT_TeaApp\LambovaT_TeaApp\TeaDB.mdf;Integrated Security=True");
+            SqlConnection sqlCon = new SqlConnection(@"Data Source = DESKTOP-SDEJ6HG; Initial Catalog=Tea; Integrated Security=True");
             try
             {
-                string query = "SELECT * FROM TeaTable";
+                string query = "SELECT * FROM AllTheTea";
                 SqlDataAdapter dataAdapter = new SqlDataAdapter(query, sqlCon);
 
                 DataSet dataSet = new DataSet();
