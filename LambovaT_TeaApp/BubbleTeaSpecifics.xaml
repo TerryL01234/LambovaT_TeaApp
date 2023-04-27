@@ -4,11 +4,14 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LambovaT_TeaApp"
-        mc:Ignorable="d"
+       xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+
+ mc:Ignorable="d"
         Title="BubbleTeaSpecifics" 
         Height="900" 
         Width="800"
-        Background="#B99CD5">
+        Background="#B99CD5"
+        ResizeMode="NoResize">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="58"/>
